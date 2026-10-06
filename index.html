@@ -1,10 +1,354 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angela Zhang, Ph.D. | AI, Information Retrieval & RAG</title>
+  <meta name="description" content="Angela Zhang, Ph.D. — AI and information retrieval researcher and engineer focused on RAG, NLP, search, and applied AI systems." />
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+      --max-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-name {
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 22px 60px;
+    }
+
+    .hero {
+      padding: 90px 0 60px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.6rem);
+      line-height: 1.05;
+      margin: 0 0 18px;
+    }
+
+    .hero .subtitle {
+      font-size: 1.25rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      font-size: 1.1rem;
+      color: #374151;
+    }
+
+    .hero-links {
+      margin-top: 28px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--accent);
+      font-weight: 600;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    section {
+      padding: 34px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      margin-bottom: 6px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px;
+      margin: 16px 0;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      background: #eef2ff;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 30px 20px 50px;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding-top: 60px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This site is hosted completely free on GitHub Pages.  Oyyyy.  Is this working?  </p>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-name">Angela Zhang, Ph.D.</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <h1>Angela Zhang, Ph.D.</h1>
+      <div class="subtitle">AI / RAG Engineer · Information Retrieval · NLP · Applied AI</div>
+      <p>
+        I build and evaluate intelligent retrieval systems, with a focus on information retrieval,
+        natural language processing, retrieval-augmented generation, and applied AI. My work combines
+        research depth with practical engineering experience across prototyping, software testing,
+        system evaluation, and technical problem solving.
+      </p>
+
+      <div class="hero-links">
+        <a class="button primary" href="#research">View Research</a>
+        <a class="button" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I earned my Ph.D. in Computer Science from North Carolina State University, where my research
+        focused on personalized scientific information retrieval, topic comparison, novelty, and
+        research evaluation. I am especially interested in systems that help people retrieve,
+        compare, evaluate, and reason over complex technical information.
+      </p>
+      <p>
+        My background spans AI research, retrieval and NLP, financial software testing and analysis,
+        prototype development, and applied engineering. I am particularly interested in work that
+        connects AI systems with real operational or scientific problems.
+      </p>
+
+      <div class="tag-list">
+        <span class="tag">Information Retrieval</span>
+        <span class="tag">RAG</span>
+        <span class="tag">NLP</span>
+        <span class="tag">Search</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Python</span>
+        <span class="tag">Evaluation</span>
+        <span class="tag">Prototyping</span>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+
+      <div class="card">
+        <h3>Topic Comparison for Personalized Research Evaluation</h3>
+        <div class="muted">Ph.D. Dissertation · North Carolina State University · 2026</div>
+        <p>
+          Developed a multilevel framework for evaluating and comparing scientific research topics,
+          with emphasis on personalized novelty, topic coverage, clustering quality, and retrieval.
+          The work explored how topic representations and sampling strategies can improve the way
+          research collections are evaluated for individual users.
+        </p>
+        <p>
+          <a href="#" target="_blank">Dissertation link — replace with NC State repository URL</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Applied NLP / Retrieval Research</h3>
+        <div class="muted">Internal technical research presentation</div>
+        <p>
+          Conducted applied research involving NLP, retrieval, and document analysis in a federal
+          intelligence environment. Presented technical work at an internal research conference.
+        </p>
+        <p class="muted">
+          Details intentionally kept high-level. Add only information you are authorized to share.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="card">
+        <h3>RAG & Novelty Evaluation</h3>
+        <div class="muted">Portfolio project · In development</div>
+        <p>
+          Exploring adaptive sampling, novelty detection, and uncertainty signals for retrieval
+          pipelines. The goal is to identify unusual but important information that may improve
+          context selection and downstream RAG performance.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Research Portfolio</h3>
+        <div class="muted">Coming soon</div>
+        <p>
+          This section can later include small demonstrations, notebooks, architecture diagrams,
+          evaluation results, and concise write-ups of technical experiments.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>
+        My experience combines research and engineering across several environments:
+      </p>
+
+      <div class="card">
+        <h3>AI, Search & Research</h3>
+        <p>
+          Information retrieval, NLP, topic modeling, semantic representations, retrieval evaluation,
+          novelty analysis, ranking, experimentation, and applied machine learning research.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Financial Software & Technical Analysis</h3>
+        <p>
+          Experience in financial technology, software testing, compliance-oriented systems, data
+          analysis, and identifying technical issues in customer-facing financial workflows.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Engineering & Prototyping</h3>
+        <p>
+          Experience translating ambiguous problems into technical prototypes, evaluating system
+          behavior, debugging workflows, and communicating findings across technical and operational
+          contexts.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        I am interested in AI, RAG, information retrieval, applied research, and engineering roles
+        where technical depth and real-world problem solving intersect.
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:YOUR_EMAIL@gmail.com">YOUR_EMAIL@gmail.com</a>
+      </p>
+
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="#" target="_blank">Add LinkedIn URL</a>
+      </p>
+
+      <p>
+        <strong>GitHub:</strong>
+        <a href="#" target="_blank">Add GitHub URL</a>
+      </p>
+
+      <p>
+        <strong>Resume:</strong>
+        <a href="#" target="_blank">Add resume PDF</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Angela Zhang
+  </footer>
+
 </body>
 </html>
